@@ -60,12 +60,26 @@ body{
     font-size: 50x;
     color: #222222;
     font-weight: normal;
+    position: relative;
     
 }
 
 .main-title > span {
     display: block;
     font-weight: bold;
+}
+
+.main-title::after {
+    content: '';
+    display: block;
+    width: 70px;
+    height: 6px;
+    background-color: #662c8c;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+
+
 }
 
 .description {
